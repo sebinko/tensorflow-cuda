@@ -39,3 +39,11 @@ docker run --rm -it \
 Notebook URL:
 
 - `http://localhost:8888`
+
+## RunPod Proxy Compatibility
+
+When `JUPYTER_PASSWORD` is provided, startup config enables permissive proxy/CORS settings for RunPod routing.
+
+- `allow_origin='*'`
+- `allow_remote_access=True`
+- `trust_xheaders=True`
